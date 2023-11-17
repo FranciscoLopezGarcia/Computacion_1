@@ -1,0 +1,10 @@
+# Ejercicio 6
+# Implementa las funciones escribir_en_archivo(nombre_archivo, contenido) y leer_archivo(nombre_archivo).
+# - escribir_en_archivo(nombre_archivo, contenido) debe escribir el contenido proporcionado en el archivo con el nombre dado.
+# - leer_archivo(nombre_archivo) debe devolver el contenido del archivo con el nombre dado.
+
+# Ejemplo de uso:
+# contenido = "Hola, este es un nuevo contenido."
+# escribir_en_archivo('nuevo_archivo.txt', contenido)
+# resultado_leer_archivo = leer_archivo('nuevo_archivo.txt')
+# assert resultado_leer_archivo == contenido

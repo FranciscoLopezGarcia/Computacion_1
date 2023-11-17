@@ -1,0 +1,10 @@
+# Ejercicio 2
+# Implementa las funciones contar_vocales(cadena) e invertir_cadena(cadena).
+# - contar_vocales(cadena) debe devolver la cantidad de vocales en la cadena.
+# - invertir_cadena(cadena) debe devolver la cadena invertida.
+
+# Ejemplo de uso:
+# resultado_contar_vocales = contar_vocales("python")
+# assert resultado_contar_vocales == 2
+# resultado_invertir_cadena = invertir_cadena("hello")
+# assert resultado_invertir_cadena == "olleh"

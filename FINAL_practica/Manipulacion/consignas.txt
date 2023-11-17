@@ -1,0 +1,6 @@
+# Ejercicio 11
+# Implementa la función sumar_datos_archivo(nombre_archivo) que suma los datos numéricos en el archivo dado.
+
+# Ejemplo de uso:
+# resultado_sumar_datos_archivo = sumar_datos_archivo('datos.txt')
+# assert resultado_sumar_datos_archivo == 15

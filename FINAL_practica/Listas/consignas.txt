@@ -1,0 +1,10 @@
+# Ejercicio 10
+# Implementa las funciones obtener_elemento_medio(lista) y filtrar_pares(lista).
+# - obtener_elemento_medio(lista) debe devolver el elemento medio de la lista.
+# - filtrar_pares(lista) debe devolver una nueva lista con solo los elementos pares de la lista original.
+
+# Ejemplo de uso:
+# resultado_obtener_elemento_medio = obtener_elemento_medio([1, 2, 3, 4, 5])
+# assert resultado_obtener_elemento_medio == 3
+# resultado_filtrar_pares = filtrar_pares([1, 2, 3, 4, 5, 6])
+# assert resultado_filtrar_pares == [2, 4, 6]

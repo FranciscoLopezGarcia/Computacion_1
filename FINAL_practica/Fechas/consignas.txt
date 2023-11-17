@@ -1,0 +1,8 @@
+# Ejercicio 7
+# Implementa la clase Base para almacenar objetos Persona con sus respectivas fechas de nacimiento.
+# La clase Base debe tener los métodos:
+# - add(self, persona): Agrega una persona a la lista de datos.
+# - sorted(self): Ordena la lista de personas por fecha de nacimiento.
+
+# Ejemplo de uso:
+# Consulta el código de los casos de prueba para ver cómo se utilizan las clases y los métodos.

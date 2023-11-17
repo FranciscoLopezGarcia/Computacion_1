@@ -1,0 +1,6 @@
+# Ejercicio 9
+# Implementa la función contar_lineas(nombre_archivo) que cuenta la cantidad de líneas en el archivo dado.
+
+# Ejemplo de uso:
+# resultado_contar_lineas = contar_lineas('archivo.txt')
+# assert resultado_contar_lineas == 3

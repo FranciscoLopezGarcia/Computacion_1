@@ -1,0 +1,13 @@
+# Ejercicio 3
+# Implementa las funciones sumar(a, b), restar(a, b) y multiplicar(a, b).
+# - sumar(a, b) debe devolver la suma de a y b.
+# - restar(a, b) debe devolver la resta de a y b.
+# - multiplicar(a, b) debe devolver el producto de a y b.
+
+# Ejemplo de uso:
+# resultado_sumar = sumar(3, 5)
+# assert resultado_sumar == 8
+# resultado_restar = restar(10, 4)
+# assert resultado_restar == 6
+# resultado_multiplicar = multiplicar(2, 3)
+# assert resultado_multiplicar == 6

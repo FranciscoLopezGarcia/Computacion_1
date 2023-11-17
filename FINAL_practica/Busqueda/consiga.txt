@@ -1,0 +1,8 @@
+# Ejercicio 1
+# Implementa la función buscar_palabra(archivo, palabra) que recibe el nombre de un archivo
+# y una palabra, y devuelve True si la palabra se encuentra en el archivo y False en caso contrario.
+# Utiliza manejo de archivos para realizar esta operación.
+
+# Ejemplo de uso:
+# resultado = buscar_palabra('archivo.txt', 'Python')
+# assert resultado == True

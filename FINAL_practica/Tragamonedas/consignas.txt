@@ -1,0 +1,10 @@
+# Ejercicio 13
+# Implementa la clase Tragamonedas que simula una máquina tragamonedas.
+# La clase debe tener los métodos:
+# - insertar_moneda(self): Inserta una moneda en la tragamonedas.
+# - tirar(self): Simula una tirada de la máquina tragamonedas y devuelve el premio obtenido.
+#   La tirada debe ser aleatoria, y los premios también deben tener un componente aleatorio.
+# Asegúrate de manejar adecuadamente las excepciones.
+
+# Ejemplo de uso:
+# Consulta el código de los casos de prueba para ver cómo se utilizan las clases y los métodos.

@@ -1,0 +1,8 @@
+# Ejercicio 8
+# Implementa la clase Phrase para codificar frases. La clase debe tener el método encode(frase) que codifica la frase dada.
+# La codificación debe devolver un string que representa la posición de cada letra en la frase original.
+# Cada letra debe aparecer en la lista solo si está presente en la frase original.
+# La posición de cada letra debe comenzar desde 1 y se debe proporcionar una lista para cada letra.
+
+# Ejemplo de uso:
+# Consulta el código de los casos de prueba para ver cómo se utilizan las clases y los métodos.

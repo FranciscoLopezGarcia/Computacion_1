@@ -1,0 +1,12 @@
+# Ejercicio 4
+# Implementa las funciones mezclar_diccionarios(dict1, dict2) y obtener_valor_por_clave(diccionario, clave).
+# - mezclar_diccionarios(dict1, dict2) debe combinar los diccionarios dict1 y dict2, dando prioridad a los valores de dict2 en caso de conflictos.
+# - obtener_valor_por_clave(diccionario, clave) debe devolver el valor correspondiente a la clave proporcionada.
+
+# Ejemplo de uso:
+# dict1 = {'a': 1, 'b': 2}
+# dict2 = {'b': 3, 'c': 4}
+# resultado_mezclar_diccionarios = mezclar_diccionarios(dict1, dict2)
+# assert resultado_mezclar_diccionarios == {'a': 1, 'b': 3, 'c': 4}
+# resultado_obtener_valor = obtener_valor_por_clave(dict1, 'edad')
+# assert resultado_obtener_valor == 25

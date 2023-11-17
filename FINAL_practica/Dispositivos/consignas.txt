@@ -1,0 +1,10 @@
+# Ejercicio 5
+# Implementa la clase Database y la clase Dispositivo para manejar una base de datos de dispositivos.
+# La clase Database debe tener los métodos:
+# - __init__(self, template): Inicializa la base de datos con un template proporcionado.
+# - add_dispositivo(self, dispositivo): Agrega un dispositivo a la base de datos.
+# - delete_by_id(self, id): Elimina un dispositivo por su ID.
+# Asegúrate de que los casos de prueba sean exitosos utilizando las aserciones compare_dispositivos y los métodos de la clase Database.
+
+# Ejemplo de uso:
+# Consulta el código de los casos de prueba para ver cómo se utilizan las clases y los métodos.

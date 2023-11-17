@@ -1,0 +1,11 @@
+# Ejercicio 13
+# Implementa la clase Compress que se encarga de comprimir y descomprimir texto.
+# La clase debe tener los métodos:
+# - compress(texto: str) -> Tuple[List[int], Dict[str, int]]:
+#   Comprime el texto y devuelve una tupla con una lista de números comprimidos y un diccionario
+#   con la representación de los valores originales.
+# - uncompress(comprimido: List[int], valores: Dict[str, int]) -> str:
+#   Descomprime la lista de números y el diccionario de valores para recuperar el texto original.
+
+# Ejemplo de uso:
+# consulta el código de los casos de prueba para ver cómo se utilizan las clases y los métodos.
