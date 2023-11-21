@@ -42,71 +42,74 @@ class TestTragamonedas(unittest.TestCase):
             10,
         )
 
-    # def test_no_insertar_si_no_hay_para_premio(self):
-    #     self.tragamonedas.monedas = 50
-    #     self.tragamonedas.insertar_moneda()
-    #     self.tragamonedas.insertar_moneda()
-    #     self.tragamonedas.insertar_moneda()
-    #     self.tragamonedas.insertar_moneda()
-    #     self.tragamonedas.insertar_moneda()
-    #     with self.assertRaises(NoHayMonedasParaPremioException):
-    #         self.tragamonedas.insertar_moneda()
-    #     self.assertEqual(
-    #         self.tragamonedas.monedas,
-    #         55,
-    #     )
-    #     self.assertEqual(
-    #         self.tragamonedas.monedas_tirada,
-    #         5,
-    #     )
+    def test_no_insertar_si_no_hay_para_premio(self):
+        self.tragamonedas.monedas = 50
+        self.tragamonedas.insertar_moneda()
+        self.tragamonedas.insertar_moneda()
+        self.tragamonedas.insertar_moneda()
+        self.tragamonedas.insertar_moneda()
+        self.tragamonedas.insertar_moneda()
+        
+        with self.assertRaises(NoHayMonedasParaPremioException):
+            self.tragamonedas.insertar_moneda()
+        self.assertEqual(
+            self.tragamonedas.monedas,
+            55,
+        )
+        self.assertEqual(
+            self.tragamonedas.monedas_tirada,
+            5,
+        )
 
-    # @patch('random.randint', side_effect=[1, 2, 3])
-    # def test_tirar_descuenta_moneda(self, patched_randint):
-    #     self.tragamonedas.insertar_moneda()
-    #     self.tragamonedas.insertar_moneda()
-    #     self.tragamonedas.tirar()
-    #     self.tragamonedas.insertar_moneda()
-    #     self.assertEqual(
-    #         self.tragamonedas.monedas,
-    #         1003,
-    #     )
-    #     self.assertEqual(
-    #         self.tragamonedas.monedas_tirada,
-    #         1,
-    #     )
+    @patch('random.randint', side_effect=[1, 2, 3])
+    def test_tirar_descuenta_moneda(self, patched_randint):
+        self.tragamonedas.insertar_moneda()
+        self.tragamonedas.insertar_moneda()
+        self.tragamonedas.tirar()
+        self.tragamonedas.insertar_moneda()
+        self.assertEqual(
+            self.tragamonedas.monedas,
+            1002,
+        )
+        self.assertEqual(
+            self.tragamonedas.monedas_tirada,
+            1,
+        )
 
-    # def test_tirar_sin_moneda(self):
-    #     with self.assertRaises(NoHayMonedaException):
-    #         self.tragamonedas.tirar()
-    #     self.assertEqual(
-    #         self.tragamonedas.monedas,
-    #         1000,
-    #     )
+    def test_tirar_sin_moneda(self):
+        with self.assertRaises(NoHayMonedaException):
+            self.tragamonedas.tirar()
+        self.assertEqual(
+            self.tragamonedas.monedas,
+            1000,
+        )
 
-    # @patch('random.randint', side_effect=[1, 2, 3])
-    # def test_tirar_sin_moneda_a_la_segunda(self, patched_randint):
-    #     self.tragamonedas.insertar_moneda()
-    #     self.tragamonedas.insertar_moneda()
-    #     self.tragamonedas.tirar()
-    #     with self.assertRaises(NoHayMonedaException):
-    #         self.tragamonedas.tirar()
-    #     self.assertEqual(
-    #         self.tragamonedas.monedas,
-    #         1002,
-    #     )
-    #     self.assertEqual(
-    #         self.tragamonedas.monedas_tirada,
-    #         0,
-    #     )
+    @patch('random.randint', side_effect=[1, 2, 3])
+    def test_tirar_sin_moneda_a_la_segunda(self, patched_randint):
+        self.tragamonedas.insertar_moneda()
+        self.tragamonedas.insertar_moneda()
+        self.tragamonedas.tirar()
+        with self.assertRaises(NoHayMonedaException):
+            self.tragamonedas.tirar()
+        self.assertEqual(
+            self.tragamonedas.monedas,
+            1001,
+        )
+        self.assertEqual(
+            self.tragamonedas.monedas_tirada,
+            0,
+        )
 
-    # @patch('random.randint', side_effect=[1, 2, 3])
-    # def test_tirar_sin_premio(self, patched_randint):
-    #     self.tragamonedas.insertar_moneda()
-    #     premio = self.tragamonedas.tirar()
-    #     self.assertEqual(
-    #         premio,
-    #         0,
-    #     )
+    @patch('random.randint', side_effect=[1, 2, 3])
+    def test_tirar_sin_premio(self, patched_randint):
+        print(f"monedas: {self.tragamonedas.monedas}")
+        print(f"monedas_tirada: {self.tragamonedas.monedas_tirada}")
+        self.tragamonedas.insertar_moneda()
+        premio = self.tragamonedas.tirar()
+        self.assertEqual(
+            premio,
+            0,
+        )
 
     # @patch('random.randint', side_effect=[1, 1, 1])
     # def test_tirar_con_premio(self, patched_randint):
@@ -151,8 +154,7 @@ class TestTragamonedas(unittest.TestCase):
     #     )
     #     self.assertEqual(
     #         self.tragamonedas.monedas,
-    #         1002,
-    #     )
-
+    #         1002,)
+        
 if __name__ == '__main__':
     unittest.main()
